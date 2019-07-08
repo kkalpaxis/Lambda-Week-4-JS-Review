@@ -1,7 +1,84 @@
 body {
+    background: #2e3842;
+    color: white;
     font-family: 'DM Serif Display', serif;
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 body.landing #page-wrapper {
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/banner.jpg");
+    background-image: url("../img/banner.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+}
+
+/* HEADER */
+#header {
+    transition: background-color 0.2s ease;
+	background: #2e3842;
+	height: 3em;
+	left: 0;
+	line-height: 3em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+    #header h1 {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+	    height: inherit;
+	    left: 1.25em;
+	    line-height: inherit;
+	    position: absolute;
+	    top: 0;
+    }
+        
+        #header h1 a {
+            border: 0;
+            display: block; 
+            height: inherit;
+            line-height: inherit;
+        }
+
+        #header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+        
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    min-height: 35em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
 }
