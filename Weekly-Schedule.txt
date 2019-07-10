@@ -1,0 +1,51 @@
+** all times are EST; project time runs from 3:00-6:45, daily **
+
+// M O N D A Y //
+* 3:00-4:00 Decided to re-create the portfolio website from scratch from week 2 *
+During Build Week I realized that starting from scratch was difficult. The guided projects from the weeks before always had some sort of
+code already in place so Build Week was the first time I encountered an entirely blank workspace. My main issue during build week was making
+sure my head tags had all the components they needed and were linked properly to the folders I created, so I wanted to practice that here.
+
+* 4:00-6:45 Built the landing screen for the homepage *
+Here I tried to replicate the landing page from the portfolio website template as close as possible. I did some deep dives into the main CSS
+code the creator of the template wrote. With over 6,000 lines of CSS code for the main page, alone, it was a lot and got confusing.
+I learned how to add a background image to a webpage, how to use CSS units better, line-height, letter-spacing, inheriting, positioning,
+z-indexes, etc. In the Javascript section, I learned what breakpoints are. Breakpoints essentially allow developers to debug their JS by 
+pausing the script.
+
+
+
+// T U E S D A Y //
+(no wifi day)
+* 3:00-3:30 Finished the homepage *
+During this time I finished building out and formatting the homepage. I decided that copying the portoflio website was a bit out of scope.
+Looking at the porfolio website template, I could see a lot of JS integration that I haven't learned yet. The developer used jQuery which
+is a "write less, do more" library that allows you to simplify your Javascript.
+
+* 3:30-6:00 Built an About and Contact Page *
+Here I built two more pages for the website. For these pages I was tempted to copy my code over from the home page, but I specifically 
+started from scratch again to get more repititions with the head tags. Between the About and Contact pages I want to create a resume page 
+that links directly to an uploaded PDF of my resume instead of a webpage. I added a few event listeners to each page, but was a bit limited 
+my internet situation.
+
+* 6:00-6:45 "Function Javascript" by Michael Fogus *
+Found a great book on JS that actually explained how useful it is and the limitations to it. A technique for building JS applications is
+called "functional programming" where the following techniques are employed: (i) an abstraction is identified and a function is built for 
+it (ii) existing functions are used to build more complex abstractions and (iii) existing function are passed to other functions to build
+even more abstractions.
+
+
+
+// W E D N E S D A Y //
+*3:00- 
+
+// T O - D O //
+- Create and style about page
+- create contact page
+- add event listeners to all pages
+
+-Home Page Accordion
+- Figure out the resume doc page
+- Format each page for mobile view
+- Add more JS to every page 
+- learn about react or jQuery or something new 
