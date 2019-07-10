@@ -8,13 +8,23 @@ body {
     line-height: 1.75em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     color: #fff;
     font-weight: 800;
     letter-spacing: 0.225em;
     line-height: 1em;
     margin: 0 0 1em 0;
     text-transform: uppercase;
+}
+
+h3 { 
+    color: #1d242a;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 a {
@@ -95,6 +105,8 @@ header nav a {
     background: #2e3842; 
     padding-top: 50px;
     padding-bottom: 50px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
     #one h2 {
     text-align: center;
@@ -111,6 +123,7 @@ header nav a {
     display: flex;
     flex-direction: column;
     background: #2e3842; 
+    border-bottom: 2px solid white;
 }
     #two img {
         width: 500px;
@@ -135,6 +148,8 @@ header nav a {
 #three {
     display: flex;
     flex-direction: column;
+    background: #2e3842;
+    border-bottom: 2px solid white;
 }
 
     #three header {
@@ -168,22 +183,39 @@ header nav a {
     }  
 
 /* ACCORDION */ 
-#three .features-row1 {
+.accordion {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-#three .features-panel {
+.features-panel {
     width: 500px;
     padding: 25px;
 }
-    #three .features-panel .panel-bar {
+    .features-panel .panel-bar {
         display: flex;
         justify-content: space-between;
+        background: #dce0e6;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-left: 15px;
     }
 
-#three button {
+    .features-panel .panel-content {
+        display: none;
+        margin-top: 15px;
+        background: #ac9a00;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+    
+    .features-panel .toggle-on {
+        display: block;
+    }
+
+button {
     font-family: inherit;
     color: white;
     background-color: #1d242a;
@@ -191,26 +223,21 @@ header nav a {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    cursor: pointer
+    cursor: pointer;
+    margin-right: 20px;
 }
     
-    #three .panel-buttons .hide-btn {
+    .panel-buttons .hide-btn {
         display: none;
     }
 
-#three .features-panel .panel-content {
-    display: none;
-    margin-top: 15px;
-}
 
-#three .features-panel .toggle-on {
-    display: block;
-}
- 
+
+
 /* FOOTER */
 #footer {
-    padding: 6em 0 4em 0 ;
-    background-color: #1d242a;
+    padding-top: 20px;
+    background-color: #2e3842;
     text-align: center;
     display: flex;
     justify-content: center;

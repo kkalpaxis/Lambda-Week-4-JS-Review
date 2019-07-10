@@ -27,6 +27,7 @@ h3, h4, h5, h6 {
 
 p {
     font-weight: 400;
+    color: #2e3842;
 }
 
 a {
@@ -100,25 +101,74 @@ header nav a {
         top: 0;
     }
 
-    #main-text {
-        padding-top: 50px;
+    #main-box {
         background-color: white;
         color:#2e3842; 
         display: flex;
         font-size: 14px;
         font-weight: 400px;
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-bottom: 50px;
     }
 
+        #main-box .main-text {
+            padding-top: 175px;
+            padding-bottom: 125px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
     img { 
-        width: 500px;
-        height: 300px;
+        width: 700px;
         margin-left: 50px;
     }
 
     code {
         color: #2e3842;
         background: #dce0e6;
+        padding: 5px;
+    }
+
+    #skills {
+        display: flex;
+        background: white;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+        width: 1000px;
+    }
+
+        #skills .skill-box {
+            width: 100%;
+            padding-top: 50px;
+            text-align: center;
+            border-left: 1px solid #2e3842;
+        }
+
+            #skills .skill-box p {
+                font-size: 16px;
+                line-height: 1.25em;
+                padding: 25px;
+            }
+
+            #skills .fas {
+                color: #2e3842;
+                font-size: 36px;
+                margin-bottom: 25px;
+            }
+
+/* FOOTER */
+#footer {
+    padding: 6em 0 4em 0 ;
+    background-color: #2e3842;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+    #footer p {
+        color: white;
+    }
+    #footer .icon {
+        font-size: 24px;
+        padding-right: 24px;
+        line-height: 1em;
     }

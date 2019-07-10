@@ -16,29 +16,31 @@ const panelData = [
         content: "In this project I learned how to use git and GitHub for the first time by forking, cloning, adding, commiting, and pushing changes to a repo. It was a challenging and rewarding experience."
     },
     {
-        title: "Early Foundations: Understanding Git",
-        content: "In this project I learned how to use git and GitHub for the first time by forking, cloning, adding, commiting, and pushing changes to a repo. It was a challenging and rewarding experience."
+        title: "Learning the Ropes: Flexbox",
+    content: "In this project, I learned the importance of flexbox in CSS. Flexbox is a great tool that allows us to apply key attributes to parent tags."
     },
     {
-        title: "Early Foundations: Understanding Git",
-        content: "In this project I learned how to use git and GitHub for the first time by forking, cloning, adding, commiting, and pushing changes to a repo. It was a challenging and rewarding experience."
-    },  
+        title: "Sprint Challenge: Creating A Home and About Page",
+        content: "Here is my completed code from a Lambda School Sprint Challenge. In my first week, in under three hours, I was able to build and style a home and about page from scratch."
+    },
+    {
+        title: "Oh So Meta: My First Website!",
+        content: "In my favorite assignment so far, I learned how to edit the HTML and CSS of a pre-existing template to create my own porfolio website."
+    }
 ]
 
 const accordion = document.querySelector('.accordion')
 
-accordion.appendChild(createPanel2('hi rosie', 'best cat award'))
-
 panelData.forEach(data => {
     console.log('creating panel:', data.title)
-    accordion.appendChild(createPanel2(data.title, data.content))
+    accordion.appendChild(createPanel(data.title, data.content))
 })
 
 function createPanel(title, content) {
     // define new elements
     const panel = document.createElement('div');
     const panelBar = document.createElement('div');
-    const title = document.createElement('h3');
+    const panelTitle = document.createElement('h3');
     const panelButton = document.createElement('div');
     const buttonOpen = document.createElement('button');
     const buttonClose = document.createElement('button');
@@ -47,8 +49,8 @@ function createPanel(title, content) {
     // set up structure of elements
     panel.appendChild(panelBar)
     panel.appendChild(panelContent)
-    panelBar.appendChild(title)
-    panelBar.appendChild(button)
+    panelBar.appendChild(panelTitle)
+    panelBar.appendChild(panelButton)
     panelButton.appendChild(buttonOpen)
     panelButton.appendChild(buttonClose)
 
@@ -67,7 +69,7 @@ function createPanel(title, content) {
     panelTitle.textContent = title
 
     // button events
-    buttonPanel.addEventListener('click', event => {
+    panelButton.addEventListener('click', event => {
         console.log('button clicked', event.target)
         // 1. toggle hide-btn on BOTH buttons
         buttonOpen.classList.toggle('hide-btn')
