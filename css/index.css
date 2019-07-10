@@ -206,9 +206,11 @@ header nav a {
     .features-panel .panel-content {
         display: none;
         margin-top: 15px;
-        background: #ac9a00;
+        background: #dce0e6;
+        color: #1d242a;
+        line-height: 1.25em;
         border-radius: 10px;
-        padding-left: 15px;
+        padding: 25px;
     }
     
     .features-panel .toggle-on {
