@@ -3,10 +3,12 @@ nameColor.addEventListener('mouseover', () => {
     nameColor.style.color = '#8aa1b8';
 });
 
-const byeBanner = document.querySelector('.banner-text');
-byeBanner.addEventListener('click', () => {
-    byeBanner.style.display = 'none';
+const bigBanner = document.querySelector('.banner-text');
+bigBanner.addEventListener('mouseover', () => {
+    bigBanner.style.fontSize = '2rem';
+    bigBanner.style.transition = '0.5s ease';
 });
+
 
 
 /* Wednesday Guided Lecture Accordion Practice */
@@ -79,20 +81,3 @@ function createPanel(title, content) {
     }) 
     return panel
 }
-
-function createPanel2(title, content) {
-    const panel = document.createElement('div')
-    panel.innerHTML = `<div class="panel">
-    <div class="panel-bar">
-      <h3>${title}</h3>
-      <div class="panel-buttons">
-        <button class="panel-btn-open">Open</button>
-        <button class="panel-btn-close hide-btn">Close</button>
-      </div>
-    </div>
-    <div class="panel-content">
-      ${content}
-    </div>
-  </div>`
-    return panel
-  }
