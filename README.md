@@ -1,2 +1,1 @@
-# Official-Portfolio-Website
-This repo holds my official portfolio website. 
+This is an old repo. My official website is in the repo Karina-Portfolio-Website.
